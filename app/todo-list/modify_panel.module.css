@@ -1,0 +1,113 @@
+.outer-container
+{
+    visibility: hidden;
+    background-color: rgb(240, 240, 240, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.outer-container.expand
+{
+    visibility: visible;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    padding: 5px 16px;
+    bottom: 0;
+    width: min(25vw, 500px);
+    border: 1px solid rgb(211, 211, 211);
+    border-top-width: 0;
+    background-color: white;
+    right: max(-25vw, -500px);
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+}
+
+.container.expand {
+    right: 0;
+}
+
+.section {
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section input {
+    border: none;
+}
+
+.section input:focus {
+    outline: none;
+}
+
+.task-description {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.icon-wrapper {
+    width: 2rem;
+    display: flex;
+    border-radius: 99px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+.icon-wrapper:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: gray;
+}
+
+.action-container {
+    margin-top: auto;
+    align-self: flex-end;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.update-button,
+.delete-button {
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    border: none;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    display: flex;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.update-button {
+    background-color: #1034a6;
+    color: white;
+    margin-right: 10px;
+}
+
+.update-button svg {
+    margin-right: 5px;
+}
+
+.delete-button {
+    color: white;
+    background-color: rgb(237, 0, 0);
+}
+
+.delete-button svg {
+    margin-right: 5px;
+}

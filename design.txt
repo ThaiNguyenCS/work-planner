@@ -1,0 +1,23 @@
+I. Màn hình Todolist
+    1. Xem task của ngày hôm nay
+
+    2. Xem task của nhiều ngày
+    
+    Todo-list item
+    + Title (UI)
+    + Status (UI)
+    + Category (UI)
+    + Priority (UI)
+    + Due date (UI)
+    + Thời gian bắt đầu
+    + Thời gian đặt nhắc nhở
+    
+Chức năng:
+    Sắp xếp theo mức độ ưu tiên
+    Sắp xếp theo mức emergency
+    Lọc theo trạng thái
+    Lọc theo category
+    Nhắc nhở
+    Thêm nhắc nhở
+    Xóa nhắc nhở
+    Sửa nhắc nhở
